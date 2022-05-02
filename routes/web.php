@@ -24,5 +24,7 @@ Route::get('/empleado', function () {
 });
 
 
-//Route::get('/empleado', [EmpleadoController::class, 'index']);
+//Route::get('/empleado/create', [EmpleadoController::class, 'create']);
+
+Route::resource('empleado', EmpleadoController::class);
 
