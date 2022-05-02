@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmpleadoController;
+use phpDocumentor\Reflection\Types\Resource_;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/empleado', function () {
+    return view('empleado.index');
+});
 
-Route::get('/empleado', [EmpleadoController::class, 'index']);
+
+//Route::get('/empleado', [EmpleadoController::class, 'index']);
+

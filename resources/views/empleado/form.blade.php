@@ -1,0 +1,1 @@
+Formulario en común entre create y editar empleado
